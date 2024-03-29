@@ -109,7 +109,7 @@ class GSCamera(torch.nn.Module):
     """
     def __init__(self, colmap_id, R, T, FoVx, FoVy, image, gt_alpha_mask,
                  image_name, uid,
-                 trans=np.array([0.0, 0.0, 0.0]), scale=1.0, data_device = "cuda",
+                 trans=np.array([0.0, 0.0, 0.0]), scale=1.0, data_device = "cpu",
                  image_height=None, image_width=None,
                  ):
         """
